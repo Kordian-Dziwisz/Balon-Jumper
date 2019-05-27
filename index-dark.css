@@ -5,8 +5,9 @@
 }
 
 body {
-	background-color: white;
+	background-color: #8e8e8e;
 	font-family: "Roboto", sans-serif;
+	color: whitesmoke;
 }
 
 /* Navbar */
@@ -14,11 +15,11 @@ body {
 #navbar {
 	position: sticky;
 	top: 0;
-	background-color: white;
+	background-color: #616161;
 	height: 10vh;
 	width: 100vw;
 	text-align: center;
-	box-shadow: 0 0.5vh 0.5vh whitesmoke;
+	box-shadow: 0 0.5vh 0.5vh 696969;
 }
 
 #navbar > img {
@@ -50,7 +51,7 @@ body {
 }
 
 #navbar > nav > ul > li {
-	color: lightslategray;
+	color: white;
 	height: inherit;
 	width: max-content;
 	padding: 3vh 1.5vw 0 1.5vw;
@@ -59,9 +60,9 @@ body {
 }
 
 #navbar > nav > ul > li:hover {
-	background-color: whitesmoke;
-	box-shadow: 0 0.5vh 0.5vh whitesmoke;
-	text-shadow: 0 0.5vh 0.5vh lightgray;
+	background-color: #696969;
+	box-shadow: 0 0.5vh 0.5vh #696969;
+	text-shadow: 0 0.5vh 0.5vh #696969;
 	cursor: pointer;
 	transition-duration: 0.75s;
 }
@@ -110,7 +111,9 @@ div.content > footer {
 /* Sponsors */
 
 #sponsors {
-	width: 100%;
+	width: 100;
+	margin: 0 -20%;
+	background-color: #696969;
 }
 
 #sponsors > header {
@@ -159,7 +162,7 @@ div.team-table p {
 /* Bottom Bar */
 
 #bottom-bar {
-	background-color: lightgray;
+	background-color: #2e2e2e;
 	width: 100vw;
 	height: 20vh;
 }
