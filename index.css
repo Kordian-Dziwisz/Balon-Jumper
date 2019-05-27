@@ -124,7 +124,7 @@ div.names-table {
 
 div.names-table p {
 	width: max-content;
-	height: 3vh;
+	padding: 3vh;
 }
 
 /* Bottom Bar */
