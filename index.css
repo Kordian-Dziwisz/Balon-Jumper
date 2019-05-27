@@ -107,22 +107,51 @@ div.content > footer {
 	float: right;
 }
 
-#team-board {
+/* Sponsors */
+
+#sponsors {
 	width: 100%;
 }
 
-#team-board > header {
+#sponsors > header {
 	text-align: center;
 	font-size: 4vh;
 }
 
-div.names-table {
+div.sponsors-table {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-flow: wrap row;
+}
+
+div.sponsors-table div {
+	width: 20vw;
+	text-align: center;
+}
+
+div.sponsors-table div > img {
+	height: 5vh;
+}
+
+/* Team */
+
+#team {
+	width: 100%;
+}
+
+#team > header {
+	text-align: center;
+	font-size: 4vh;
+}
+
+div.team-table {
 	display: flex;
 	align-content: flex-start;
 	flex-flow: wrap row;
 }
 
-div.names-table p {
+div.team-table p {
 	width: max-content;
 	padding: 3vh;
 }
