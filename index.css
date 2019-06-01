@@ -1,165 +1,171 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: white;
-	font-family: "Roboto", sans-serif;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Navbar */
 
 #navbar {
-	position: sticky;
-	top: 0;
-	background-color: white;
-	height: 10vh;
-	width: 100vw;
-	text-align: center;
-	box-shadow: 0 0.5vh 0.5vh whitesmoke;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  box-shadow: 0 0.5vh 0.5vh whitesmoke;
 }
 
 #navbar > img {
-	margin: 0 2vw;
-	height: 10vh;
-	width: auto;
-	float: left;
+  margin: 0 2vw;
+  height: 10vh;
+  width: auto;
+  float: left;
 }
 
 #navbar > p {
-	font-weight: 300;
-	font-size: 3vh;
-	padding-top: 3vh;
-	height: 10vh;
-	width: 20vw;
-	float: left;
-	text-align: left;
+  font-weight: 300;
+  font-size: 3vh;
+  padding-top: 3vh;
+  height: 10vh;
+  width: 20vw;
+  float: left;
+  text-align: left;
 }
 
 #navbar > nav {
-	padding-right: 5vw;
-	height: inherit;
-	float: right;
+  height: inherit;
+  float: right;
+  margin: 0 2vw;
 }
 
 #navbar > nav > ul {
-	height: inherit;
-	list-style: none;
+  height: inherit;
+  list-style: none;
 }
 
-#navbar > nav > ul > li {
-	color: lightslategray;
-	height: inherit;
-	width: max-content;
-	padding: 3vh 1.5vw 0 1.5vw;
-	float: left;
-	transition-duration: 0.5s;
+#navbar nav ul li {
+  height: inherit;
+  width: max-content;
+  padding: 3vh 1.5vw 0 1.5vw;
+  float: left;
+  transition-duration: 0.5s;
 }
 
 #navbar > nav > ul > li:hover {
-	background-color: whitesmoke;
-	box-shadow: 0 0.5vh 0.5vh whitesmoke;
-	text-shadow: 0 0.5vh 0.5vh lightgray;
-	cursor: pointer;
-	transition-duration: 0.75s;
+  background-color: whitesmoke;
+  box-shadow: 0 0.5vh 0.5vh whitesmoke;
+  text-shadow: 0 0.5vh 0.5vh lightgray;
+  cursor: pointer;
+  transition-duration: 0.75s;
+}
+
+a {
+  text-decoration: none;
+  color: lightslategray;
 }
 
 /* Content */
 
 #content {
-	width: 100vw;
-	display: flex;
-	flex-flow: wrap column;
-	padding: 0 5vw;
+  display: flex;
+  flex-flow: wrap column;
 }
 
-#top-article {
-	display: flex;
-	width: 100%;
-	flex-flow: nowrap row;
-	align-items: flex-start;
-	align-content: flex-start;
+#landing-article {
+  display: flex;
+  height: 100vh;
+  flex-flow: nowrap row;
+  align-items: center;
+  background: url("./assets/bg-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 div.img {
-	width: 40%;
-	flex-shrink: 0;
+  width: 40%;
+  flex-shrink: 0;
 }
 
 div.img > img {
-	height: 50vh;
+  height: 50vh;
 }
 
 div.content {
-	padding: 20vh 0;
-	vertical-align: middle;
-	width: 50%;
+  padding: 20vh 0;
+  vertical-align: middle;
 }
 
 div.content > header {
-	font-size: 4vh;
-	color: blueviolet;
+  font-size: 4vh;
+  color: blueviolet;
 }
 
 div.content > footer {
-	float: right;
+  float: right;
+}
+/*Goals*/
+
+#goals > header {
+  text-align: center;
+  font-size: 4vh;
+}
+
+#goals-description {
+  display: flex;
+  align-content: flex-start;
+  flex-flow: wrap row;
 }
 
 /* Sponsors */
 
-#sponsors {
-	width: 100%;
-}
-
 #sponsors > header {
-	text-align: center;
-	font-size: 4vh;
+  text-align: center;
+  font-size: 4vh;
 }
 
 div.sponsors-table {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	flex-flow: wrap row;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: wrap row;
 }
 
 div.sponsors-table div {
-	width: 20vw;
-	text-align: center;
+  width: 20vw;
+  text-align: center;
 }
 
 div.sponsors-table div > img {
-	height: 10vh;
+  height: 10vh;
 }
 
 /* Team */
 
-#team {
-	width: 100%;
-}
-
 #team > header {
-	text-align: center;
-	font-size: 4vh;
+  text-align: center;
+  font-size: 4vh;
 }
 
 div.team-table {
-	display: flex;
-	align-content: flex-start;
-	flex-flow: wrap row;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: wrap row;
 }
 
 div.team-table p {
-	width: max-content;
-	padding: 3vh;
+  width: max-content;
+  padding: 3vh;
 }
 
 /* Bottom Bar */
 
 #bottom-bar {
-	background-color: lightgray;
-	width: 100vw;
-	height: 20vh;
+  background-color: lightgray;
+  height: 20vh;
 }
