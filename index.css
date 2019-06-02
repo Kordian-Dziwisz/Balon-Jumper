@@ -66,11 +66,6 @@ body {
 
 /* Content */
 
-#about {
-  display: flex;
-  flex-flow: wrap column;
-}
-
 #landing-article {
   display: flex;
   height: 100vh;
@@ -82,7 +77,7 @@ body {
 }
 
 div.img {
-  width: 40%;
+  width: 45%;
   flex-shrink: 0;
 }
 
@@ -151,11 +146,16 @@ div.team-table p {
 /* Bottom Bar */
 
 #contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   background: #10182d;
-  height: fit-content;
+  height: 250px;
 }
 
-#contact span {
+#contact footer {
+  align-self: flex-start;
   color: grey;
   font-size: 14px;
 }
