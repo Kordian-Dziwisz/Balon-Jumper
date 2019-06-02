@@ -16,6 +16,16 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+h1 {
+	line-height: normal;
+	text-align: center;
+	color: var(--on-secondary-color);
+}
+
+p {
+	color: var(--text-color);
+}
+
 /*universal classes*/
 
 .centered {
@@ -27,8 +37,6 @@ body {
 .text {
 	font-size: 19px;
 	min-width: 250px;
-	margin: 0 auto;
-	padding: 7px 20px;
 }
 
 /* Navbar */
@@ -102,14 +110,9 @@ div.content > footer {
 
 /*Goals*/
 
-h1 {
-	line-height: normal;
+#goals p {
+	margin: 0 5rem;
 	text-align: center;
-	color: var(--on-secondary-color);
-}
-
-p {
-	color: var(--text-color);
 }
 
 /* Sponsors */
