@@ -108,6 +108,14 @@ div.content > footer {
 	color: var(--text-color);
 }
 
+/* Description */
+
+#description p {
+	margin: 0 5rem;
+	line-height: 35px;
+	text-align: center;
+}
+
 /*Goals*/
 
 #goals p {
@@ -136,6 +144,8 @@ div.sponsors-table div > img {
 /* Team */
 
 div.team-table {
+	width: 70%;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
