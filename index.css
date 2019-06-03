@@ -103,8 +103,10 @@ p {
 /* Description */
 
 #description p {
-  margin: 0 5rem;
-  line-height: 35px;
+  margin: 0 10%;
+  line-height: 2rem;
+  font-weight: 5 00;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -112,11 +114,11 @@ p {
 
 #goals {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
   align-content: center;
   justify-content: center;
-  height: 20rem;
 }
 #goals div {
   width: 10rem;
@@ -130,6 +132,7 @@ p {
   padding: 5%;
 }
 #goals div p {
+  padding: 2%;
   overflow: hidden;
   color: #10182d;
 }
@@ -145,6 +148,7 @@ p {
 }
 
 #team p {
+  font-size: 1.2rem;
   width: max-content;
   padding: 3vh;
 }
