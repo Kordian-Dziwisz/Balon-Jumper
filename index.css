@@ -77,35 +77,13 @@ p {
 #landing-article {
 	display: flex;
 	height: 100vh;
-	flex-flow: nowrap row;
 	align-items: center;
+	justify-content: center;
 	background: url("./assets/bg-photo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-div.img {
-	width: 45%;
-	flex-shrink: 0;
-}
-
-div.img > img {
-	height: 50vh;
-}
-
-div.content {
-	padding: 20vh 0;
-	vertical-align: middle;
-}
-
-div.content > header {
-	font-size: 4vh;
-	color: var(--on-secondary-color);
-}
-
-div.content > footer {
-	float: right;
-	color: var(--text-color);
+#landing-article h1 {
 }
 
 /* Description */
