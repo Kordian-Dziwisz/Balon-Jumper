@@ -151,15 +151,16 @@ p {
   font-size: 1.2rem;
   width: max-content;
   padding: 3vh;
+  margin-top: 0;
 }
 
 /* Bottom Bar */
 
 #contact {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-flow: wrap row;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: wrap column;
   background: #10182d;
   height: 250px;
 }
@@ -170,6 +171,19 @@ p {
 }
 
 #contact footer {
+  align-self: flex-end;
   color: grey;
   font-size: 14px;
+  order: 3;
+}
+
+#media {
+  align-self: center;
+  order: 2;
+}
+
+#media img {
+  width: 3em;
+  height: 3em;
+  margin: 0 7px;
 }
