@@ -5,17 +5,24 @@
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $(".navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
     <title>Balon Jumper</title>
   </head>
   <body>
-    <div id="navbar">
+    <div class="navbar">
       <p>Balon Jumper</p>
       <nav>
         <a href="#description">Opis</a>
         <a href="#goals">Cele</a>
         <a href="#team">Zespół</a>
-        <!-- sponsorzy usunięci do czasu znalezienia sponsorów -->
-        <!-- <a href="#sponsors">Sponsorzy</a> -->
         <a href="#contact">Kontakt</a>
       </nav>
     </div>

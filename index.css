@@ -8,6 +8,16 @@
   --text-color: #efffff;
 }
 
+::-webkit-scrollbar {
+  width: 0.2em;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -41,35 +51,41 @@ p {
 
 /* Navbar */
 
-#navbar {
-  position: fixed;
-  top: 0;
-  background: var(--secondary-color);
+.navbar {
   height: 75px;
   width: 100vw;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  transition: 200ms linear;
 }
 
-#navbar > p {
+.navbar > p {
   float: left;
   margin-left: 30px;
   font-size: 1.46rem;
 }
 
-#navbar nav {
+.navbar nav {
   display: flex;
   float: right;
   margin: 0 1vw;
 }
 
-#navbar nav a {
+.navbar nav a {
   padding: 28px 35px;
   text-decoration: none;
   transition-duration: 0.5s;
   color: var(--text-color);
 }
 
-#navbar nav a:hover {
+.navbar nav a:hover {
   background: var(--on-secondary-color);
+}
+
+.navbar.scrolled {
+  background-color: var(--secondary-color);
+  transition: 200ms linear;
 }
 
 /* Content */
