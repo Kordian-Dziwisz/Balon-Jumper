@@ -94,7 +94,7 @@ p {
 
 /*Goals*/
 
-#goals .goals-table {
+#goals {
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -102,43 +102,25 @@ p {
   justify-content: center;
   height: 20rem;
 }
-#goals .goals-table div {
+#goals div {
   width: 10rem;
   border-radius: 10px;
   margin: 10px;
   text-align: center;
   background-color: aliceblue;
 }
-#goals .goals-table div img {
+#goals div img {
   width: 90%;
   padding: 5%;
 }
-#goals .goals-table div p {
+#goals div p {
   overflow: hidden;
   color: #10182d;
 }
 
-/* Sponsors */
-
-div.sponsors-table {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-div.sponsors-table div {
-  width: 20vw;
-  text-align: center;
-}
-
-div.sponsors-table div > img {
-  height: 10vh;
-}
-
 /* Team */
 
-div.team-table {
+#team {
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -146,7 +128,7 @@ div.team-table {
   flex-wrap: wrap;
 }
 
-div.team-table p {
+#team p {
   width: max-content;
   padding: 3vh;
 }
