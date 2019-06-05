@@ -51,7 +51,7 @@ p {
 
 /* Navbar */
 
-.navbar {
+#navbar {
   height: 75px;
   width: 100vw;
   position: fixed;
@@ -93,6 +93,7 @@ p {
 #landing-article {
   display: flex;
   height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background: url("./assets/bg-photo.jpg");
@@ -184,4 +185,9 @@ p {
   width: 3em;
   height: 3em;
   margin: 0 7px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
 }
