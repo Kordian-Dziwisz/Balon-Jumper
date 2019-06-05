@@ -60,30 +60,30 @@ p {
   transition: 200ms linear;
 }
 
-.navbar > p {
+#navbar > p {
   float: left;
   margin-left: 30px;
   font-size: 1.46rem;
 }
 
-.navbar nav {
+#navbar nav {
   display: flex;
   float: right;
   margin: 0 1vw;
 }
 
-.navbar nav a {
+#navbar nav a {
   padding: 28px 35px;
   text-decoration: none;
   transition-duration: 0.5s;
   color: var(--text-color);
 }
 
-.navbar nav a:hover {
+#navbar nav a:hover {
   background: var(--on-secondary-color);
 }
 
-.navbar.scrolled {
+#navbar.scrolled {
   background-color: var(--secondary-color);
   transition: 200ms linear;
 }
@@ -154,7 +154,7 @@ p {
   margin-top: 0;
 }
 
-/* Bottom Bar */
+/* Contact */
 
 #contact {
   display: flex;
@@ -162,7 +162,7 @@ p {
   align-items: stretch;
   flex-flow: wrap column;
   background: #10182d;
-  height: 250px;
+  height: 10rem;
 }
 
 #contact p {
@@ -174,12 +174,10 @@ p {
   align-self: flex-end;
   color: grey;
   font-size: 14px;
-  order: 3;
 }
 
 #media {
   align-self: center;
-  order: 2;
 }
 
 #media img {
