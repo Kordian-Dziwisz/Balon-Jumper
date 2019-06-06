@@ -83,6 +83,10 @@ p {
   background: var(--on-secondary-color);
 }
 
+#navbar input {
+  display: none;
+}
+
 #navbar.scrolled {
   background-color: var(--secondary-color);
   transition: 200ms linear;
@@ -123,10 +127,12 @@ p {
 }
 #goals div {
   width: 10rem;
+  height: auto;
   border-radius: 10px;
   margin: 10px;
   text-align: center;
   background-color: aliceblue;
+  transition-duration: 1s;
 }
 #goals div img {
   width: 90%;
@@ -134,8 +140,19 @@ p {
 }
 #goals div p {
   padding: 2%;
+  display: none;
   overflow: hidden;
   color: #10182d;
+  transition-duration: 1s;
+}
+@media screen and (min-width: 577px) {
+  #goals div:hover {
+    transition-duration: 1s;
+  }
+  #goals div:hover > p {
+    display: block;
+    transition-duration: 1s;
+  }
 }
 
 /* Team */
@@ -190,4 +207,83 @@ p {
 /* Mobile */
 
 @media screen and (max-width: 576px) {
+  /* Hamburger */
+  #navbar {
+    padding: 5px;
+    height: auto;
+  }
+  #navbar input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+  #navbar span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out, opacity 0.5s ease;
+  }
+
+  #navbar input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, -1px);
+  }
+  #navbar input:checked ~ span:nth-child(3) {
+    opacity: 0;
+  }
+  #navbar input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+
+  #navbar p {
+    display: none;
+    width: 100%;
+  }
+  #navbar input:checked {
+    width: 50px;
+  }
+  #navbar nav {
+    display: none;
+  }
+  #navbar input:checked ~ p {
+    display: block;
+    clear: both;
+  }
+  #navbar input:checked ~ nav {
+    display: block;
+    float: left;
+  }
+  #navbar input:checked ~ nav > a {
+    clear: both;
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  #landing-article {
+    display: none;
+  }
+
+  #goals div p {
+    display: block;
+  }
 }
