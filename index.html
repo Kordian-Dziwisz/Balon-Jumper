@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(function() {
         $(document).scroll(function() {
@@ -16,8 +27,23 @@
     </script>
     <title>Balon Jumper</title>
   </head>
+
   <body>
-    <div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-light">Balon Jumper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#description">Opis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#goals">Cele</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Zespół</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div id="navbar">
       <input type="checkbox" />
       <span></span>
       <span></span>
@@ -29,7 +55,7 @@
         <a href="#team">Zespół</a>
         <a href="#contact">Kontakt</a>
       </nav>
-    </div>
+    </div> -->
 
     <div id="landing-article">
       <h1></h1>
